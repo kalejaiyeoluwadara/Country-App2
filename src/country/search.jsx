@@ -33,7 +33,7 @@ const SearchBar = ({ data, tdata, setTdata }) => {
           type="text"
           id="term"
           name="term"
-          placeholder="Search for a country..."
+          placeholder="Search for a co..."
           value={se}
           onChange={handleSearch}
         />

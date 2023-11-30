@@ -64,7 +64,7 @@ const Single = ({view,setSingle}) =>{
                   })}
                 </p>
                 <div>
-                  <p>
+                  <p className="borders">
                     <strong>border countries: </strong>
                     {view.borders &&
                       view.borders.map((b, id) => {

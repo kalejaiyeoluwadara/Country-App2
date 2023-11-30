@@ -1,12 +1,9 @@
-:root {
-    --clr-dark: hsl(205, 86%, 17%);
-    
-}
 
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    /* border: 1px solid red; */
 }
 body{
     overflow-x: hidden;
@@ -20,6 +17,9 @@ body{
     margin: 10px;
     flex-wrap: wrap;
 }
+.nav, .nav2{
+    width:100%;
+}
 .nav{
     display: flex;
     flex-direction: row;
@@ -30,7 +30,7 @@ body{
     text-transform: capitalize;
     background: white;
     font-size: 19px;
-    
+    color:black;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.123);
 }
 
@@ -49,6 +49,7 @@ body{
 }
 .mcontainer{
     background-color: white;
+    color: black;
     height: auto;
     width: 100%;
 }
@@ -71,12 +72,18 @@ body{
     color: rgba(0, 0, 0, 0.603);
 }
 .mcontainer2 input,button,::placeholder {
-    background-color: transparent;
+    background: none;
     color: white;
 }
-
+.mcontainer .btn{
+    background-color: rgb(219 219 219);
+}
+.mcontainer input {
+    width: 53px;
+}
 .mcontainer2 .input{
     background-color: rgb(38, 52, 64);
+    
     border: none;
     
 }
@@ -154,7 +161,7 @@ input{
 }
 .mainCont {
     display: flex;
-    width: 100vw;
+    width: 100%;
     flex-wrap: wrap;
     padding: 40px 100px;
     gap: 30px;
@@ -259,10 +266,12 @@ strong{
     transform: translate(-7px, 1px);
 }
 .cardt{
-    padding: 10px 25px;
+    padding: 20px 25px;
     width: 310px;
     font-weight: bold;
     text-align: start;
+    background-color: #e8e5e5d7;
+    border-radius: 8px;
     cursor: pointer;
     margin: 10px;
     transition-duration: .3s;
@@ -275,4 +284,87 @@ strong{
 }
 .cardt h3, strong{
     opacity: 0.9;
+}
+
+@media screen and (max-width: 576px) {
+    
+    #root{
+        overflow-x: hidden;
+    }
+    .mainCont{
+        padding: 30px 10px;
+    }
+    .nav,
+    .nav2 {
+        width: 100%;
+        font-size: 15px;
+        padding:20px 25px;
+    }
+    .nav{
+        color: black;
+    }
+    .nav2{
+        color: white;
+    }
+    .search{
+        padding: 20px 5px;
+    }
+    .search div{
+        margin: 0px 20px;
+    }
+    .input{
+        width: 190px;
+    }
+    input::placeholder{
+        font-size: 10px;
+        
+        background-color: none;
+    }
+    select{
+        width: 100px;
+    }
+    .mcontainer2 select {
+        width: 100px;
+    }
+    .cardt{
+        width: 400px;        
+        border-radius: 8px;
+        background: #dfdddd47;
+    }
+    .mcontainer, .mcontainer2{
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+        /* background-color: red; */
+    }
+    .single{
+        display: flex;
+        flex-wrap: wrap;
+        /* align-items: center; */
+    }
+    .con{
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        transform: translate(-19px, -103px);
+        justify-content: center;
+    }
+    .flag{
+        padding: 0px;
+    }
+    .innertab{
+        flex-wrap: nowrap;
+    }
+    .content{
+        width: 100%;
+        padding: 0px 30px;
+    }
+    .borders{
+        display: flex;
+        flex-wrap: wrap;
+        width: 294px;
+    }
+    .mcontainer input, .mcontainer2 input{
+        width: 100px;
+    }
 }
